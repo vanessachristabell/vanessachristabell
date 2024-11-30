@@ -1,0 +1,171 @@
+/* Reset margin dan padding untuk semua elemen */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    background-image: url(bg2.png);
+    background-size: cover;
+    padding-top: 60px;
+}
+
+/* Header dan footer */
+
+.header{
+    top: 0;
+    z-index: 1000;
+    width: 1280px;
+    position: fixed;
+    left: 0;
+}
+
+.footer{
+    bottom: 0;
+    z-index: 1000;
+    width: 1280px;
+    position: relative;
+}
+
+/* Kode CSS Navigator bar */
+.navbar{
+    background-color: #939e78; /* Warna Latar belakang navbar */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 130px 0;
+    display: flex;
+    width: 1280px;
+    height: 90px;
+    z-index: 1000;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 1280px;
+    position: relative;
+    height: 60px;
+}
+
+.menu-item {
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    padding: 10px 8px;
+}
+
+.menu-item a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Dropdown */
+.menu-item .dropdown {
+    display: none;
+    position: absolute;
+    margin: 0;
+    width: auto;
+    height: auto;
+    top: 100%;
+    list-style-type: none;
+    padding: 10px;
+    background-color: #444;
+}
+
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+.dropdown li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    background-color: #555;
+}
+
+ul li{
+    padding: 0;
+    text-align: center;
+}
+
+ul a:hover{
+    background-color:navajowhite;
+}
+
+/* Container utama untuk tiga kolom */
+.container{
+    display: flex;
+    width: 1280px;
+    margin-top: 160px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    justify-content: space-between;
+}
+
+.column.side, .column.middle, .column.right{
+    overflow: hidden;
+    word-wrap: break-word;
+    margin: 0;
+}
+/* Column Kiri */
+.column.side{
+    width: 25%;
+    padding: 20px;
+    background-color: #B59F78;
+    text-align: center;
+    box-sizing: border-box;
+    border: #555;
+}
+
+.galeri{
+    border: 2px solid #fff;
+    padding: 3px;
+}
+
+.galeri:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+/* Column Middle */
+.column.middle{
+    width: 75%;
+    padding: 20px;
+    background-color: #bdcd8e;
+    text-align: justify;
+    word-spacing: 5px;
+    box-sizing: border-box;
+}
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Styling untuk elemen lainnya */
+.li1{
+    text-align: justify;
+    list-style-type: disc;
+}
+
+h2{
+    margin-top: 10px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.p{
+    margin-bottom: 15px;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Refleksi</title>
+</head>
+
+<body>
+    <!-- Header dengan Image -->
+    <div class="Header">
+        <img class="header" src="Banner TIK colab.png" alt="Banner TIK Kolaborasi">
+    </div>
+
+    <button><a href="Daftar Pustaka.html"><img src="Daftar Pustaka.svg" alt="Daftar Pustaka" height="50px" width="300px"></a></button>
+
+    <a href="index.html"><img class="img2" src="home.png" height="45px" width="45px"></a>
+
+    <!-- Container utama -->
+    <div class="container">
+        <!-- Kode HTML side bar -->
+        <div class="column side">
+            <h2 align="center">Galeri</h2><br>
+            <img class="galeri" src="peran indonesia1.jpeg" height="150" width="250" alt="Galeri 1">
+            <img class="galeri" src="peran indonesia2.jpg" height="140" width="250" alt="Galeri 2">
+        </div>
+
+        <div class="column middle">
+            <h2>Peran penting Indonesia di kancah internasional untuk mendukung SDGs</h2><br>
+            <p>Indonesia telah berperan aktif di kancah internasional dalam mendukung program SDGS
+                (Tujuan Pembangunan Berkelanjutan). Peran Indonesia yaitu menurunkan angka kemiskinan,
+                pemberdayaan ekonomi kerakyatan melalui program UMKM (Usaha Mikro Kecil Menengah),
+                reformasi penghentian tambang liar, restorasi gambut, serta program substitusi bahan
+                bakar ke bahan bakar rendah karbon seperti B30 atau penggunaan kendaraan listrik. Peran
+                tersebut tidak hanya mencerminkan komitmen Indonesia terhadap isu global, tetapi juga
+                selaras dengan nilai-nilai Pancasila. Sebagai negara yang memiliki hutan tropis terbesar
+                di dunia, Indonesia memiliki arti strategis dan memiliki tanggung jawab untuk menjadi
+                pemimpin dalam menangani perubahan iklim. Program seperti pengurangan deforestasi,
+                rehabilitasi lahan kritis, dan komitmen netral karbon adalah langkah konkret yang dapat
+                membawa dampak global. Selain itu, dalam platform seperti G20 dan COP26, Indonesia aktif
+                berperan sebagai pemimpin diskusi global sehingga Indonesia banyak mengusulkan ide
+                seperti mekanisme global untuk penetapan harga karbon dan transisi energi terbarukan.
+                Hal tersebut menunjukkan bahwa Indonesia menekankan pentingnya pemberdayaan
+                negara-negara berkembang untuk transisi energi terbarukan dan mitigasi perubahan iklim
+                yang mencerminkan semangat gotong royong dari sila kelima Pancasila dan upaya Indonesia
+                untuk mendukung negara berkembang dalam adaptasi iklim juga menunjukkan keadilan antar
+                bangsa dari sila kedua Pancasila. Komitmen Indonesia untuk memberi dukungan khusus untuk
+                negara-negara kurang berkembang dan negara berkembang kepulauan kecil serta melakukan
+                peningkatan kapasitas dalam perencanaan dan pengelolaan yang efektif terkait perubahan
+                iklim, termasuk fokus pada perempuan, generasi muda, serta masyarakat lokal dan marjinal
+                menunjukkan pentingnya keadilan sosial di tengah perubahan iklim.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer dengan Image -->
+    <div class="footer">
+        <img src="Footer TIK collab.png" alt="Footer Image">
+    </div>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+            background-image: url(bg2.png);
+            background-size: cover;
+            padding-top: 60px;
+        }
+
+        /* Header dan footer */
+        .header {
+            top: 0;
+            z-index: 1000;
+            width: 1280px;
+            position: fixed;
+            left: 0;
+        }
+
+        .footer {
+            bottom: 0;
+            z-index: 1000;
+            width: 1280px;
+            position: relative;
+        }
+
+        .container {
+            display: flex;
+            width: 1280px;
+            margin-top: 10px;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+            justify-content: space-between;
+        }
+
+        .column.side,
+        .column.middle {
+            overflow: hidden;
+            word-wrap: break-word;
+            margin: 0;
+        }
+
+        .column.side {
+            width: 25%;
+            padding: 20px;
+            background-color: #B59F78;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .galeri {
+            border: 2px solid #fff;
+            padding: 3px;
+            margin-bottom: 30px;
+        }
+
+        .galeri:hover {
+            transform: scale(1.08);
+            cursor: pointer;
+        }
+
+        /* Column Middle */
+        .column.middle {
+            width: 75%;
+            padding: 20px;
+            background-color: #ABBA7C;
+            text-align: justify;
+            word-spacing: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 75px;
+            margin-left: 5px;
+        }
+
+        p,
+        h2 {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        h2{
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
